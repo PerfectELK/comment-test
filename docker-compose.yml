@@ -12,12 +12,19 @@ services:
       api:
         aliases:
           - backend.local
+    depends_on:
+      - frontend
+      - backend
   frontend:
     build:
       context: .
       dockerfile: Dockerfile-frontend
     volumes:
-      - ./src/frontend:/usr/src/app
+      - ./src/frontend/src:/usr/src/app/src
+      - ./src/frontend/public:/usr/src/app/public
+      - ./src/frontend/index.html:/usr/src/app/index.html
+      - ./src/frontend/tsconfig.json:/usr/src/app/tsconfig.json
+      - ./src/frontend/vite.config.js:/usr/src/app/vite.config.js
     networks:
       - default
   backend:
