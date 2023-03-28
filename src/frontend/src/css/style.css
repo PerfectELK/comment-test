@@ -1,0 +1,129 @@
+header {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+}
+
+header .site-logo {
+    font-size: 28px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav .menu-item {
+    font-size: 20px;
+}
+
+main {
+    padding: 15px;
+}
+
+.article-header-container h1 {
+    font-size: 36px;
+}
+
+.article-container .article-header {
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.article-container article {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.article-container article p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.comment-container {
+    margin-top: 30px;
+}
+
+.comment-block-container .comment-block-header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.comment-block-container #comments-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid dimgrey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.comment-item:first-child {
+    margin-top: 0px;
+}
+
+.comment-item .comment-user_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-user_email {
+    margin-left: 30px;
+}
+
+.comment-item .comment-content_block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.comment-content_block .comment-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comment-content_block .comment-content {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.comment-form-container {
+
+}
+
+.comment-form-container form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+.comment-form-container form > div {
+    margin-top: 10px;
+}
+
+form label .error {
+    color: red;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+footer div {
+    font-size: 28px;
+}

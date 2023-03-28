@@ -1,0 +1,9 @@
+POST 127.0.0.1:8080/api/comment
+Content-Type: application/json
+
+{
+  "user_name": "test",
+  "user_email": "test@test.ru",
+  "header": "head",
+  "content": "content content"
+}
